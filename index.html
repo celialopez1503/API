@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API</title>
+        
+        <link rel="stylesheet" href="https://js.arcgis.com/3.35/esri/css/esri.css">
+        <script src="https://js.arcgis.com/3.35/"></script>
+        <script src="3.js"></script>
+        <style>
+            html, body, #divMap{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                border: grey 5px solid;
+
+            }
+            #BasemapToggle {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 50;
+            }
+        </style>
+        
+
+    </head>
+    <body>
+        <h1>API</h1>
+        <div id="divMap" class="map"> <div id="BasemapToggle"></div></div>
+        
+    </body>
+</html>
