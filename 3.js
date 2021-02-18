@@ -6,7 +6,7 @@ require(["esri/map","esri/dijit/BasemapToggle",'dojo/domReady!'], function(Map, 
         zoom: 14
     });
     var toggle = new BasemapToggle({
-        map: myMap,
+        map: myMap,                       //afecta a myMap (mapa que hice antes)  dijit=widget
         basemap: "satellite"
       }, "BasemapToggle");
       toggle.startup();
