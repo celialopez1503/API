@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>API</title>
-        
-        <link rel="stylesheet" href="https://js.arcgis.com/3.35/esri/css/esri.css">
-        <script src="https://js.arcgis.com/3.35/"></script>
-        <script src="4.js"></script>
-        <style>
-            html, body, #divMap{
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                border: grey 5px solid;
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Work with Map layers</title>
 
-            }
-            #BasemapToggle {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                z-index: 50;
-            }
-        </style>
-        
+    <!-- Configure dojo for asynchronous module loading -->
+    <script>
+        var dojoConfig = {
+            async: true
+        };
+    </script>
 
-    </head>
-    <body>
-        <h1>API</h1>
-        <div id="divMap" class="map"> <div id="BasemapToggle"></div></div>
-        
-    </body>
+    <!-- Reference libraries. The first CSS is a Dojo theme that gives dijits a consistent style. -->
+    <link rel="stylesheet" href="http://js.arcgis.com/3.18/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.18/esri/css/esri.css">
+    <link rel="stylesheet" href="css/workwithmaplayers.css"/>
+    <script src="http://js.arcgis.com/3.18/"></script>
+    <script src="js/map.js"></script>
+</head>
+
+<body class="nihilo">
+<div id="bcMain" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'sidebar', liveSplitters:'true'">
+    <div id="cpLeading" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="splitter:'true', region:'leading'">
+        <div id="divLegend"></div>
+    </div>
+    <div id="cpCenter" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+        <div id="BasemapToggle"></div>
+    </div>
+</div>
+</body>
 </html>
