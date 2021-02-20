@@ -1,25 +1,4 @@
-require(["esri/map",
-"esri/geometry/Extent",
-"esri/layers/FeatureLayer",
-"esri/layers/ArcGISDynamicMapServiceLayer",
-"esri/dijit/BasemapToggle",
-"esri/dijit/Legend",
-"dojo/_base/array", 
-// "dojo/parser",
-"dijit/layout/BorderContainer", 
-"dijit/layout/ContentPane", 
-"dijit/layout/AccordionContainer",'dojo/domReady!'], 
-function(Map, 
-    Extent, 
-    FeatureLayer,
-    ArcGISDynamicMapServiceLayer, 
-    BasemapToggle, 
-    Legend, 
-    arrayUtils
-    ) {
-    //   parser.parse();
-          
-        
+require(["esri/map","esri/geometry/Extent","esri/layers/FeatureLayer","esri/layers/ArcGISDynamicMapServiceLayer","esri/dijit/BasemapToggle","esri/dijit/Legend",'dojo/domReady!'], function(Map, Extent, FeatureLayer,ArcGISDynamicMapServiceLayer, BasemapToggle, Legend) {         
     var myMap = new Map('divMap', {
         basemap: 'topo',
         extent: new Extent(
@@ -48,7 +27,7 @@ function(Map,
       toggle.startup();
 
     var Legend = new Legend({
-        map: myMap,
+        map: myMap
      }, "legendDiv");
         Legend.startup();
 
