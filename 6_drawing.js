@@ -36,20 +36,17 @@ require(["esri/map","esri/geometry/Extent","esri/layers/FeatureLayer","esri/laye
     function addToMap (params){
         console.log('he pintado', params);
 
-        var graphic = new Graphic(params.geometry, sls);
+        
 
         var sls = new SimpleLineSymbol(
             SimpleLineSymbol.STYLE_DASH,
             new Color([255,0,0]),
             3);
+
+        var graphic = new Graphic(params.geometry, sls);
         
-            myMap.graphics.add(graphic);
-    }
-     
-    
-
-
-     
+        myMap.graphics.add(graphic);
+    }  
 
     });
 
