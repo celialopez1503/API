@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\LocatorTask"
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\SearchWidget"
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\QueryData"
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\VisualizeData"
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\CreatePopup"
+		},
+		{
+			"path": "..\\..\\datos_clase\\WAJA_API\\ViewshedAnalysis"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ViewshedAnalysis"
+	}
+}
